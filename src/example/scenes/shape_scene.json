@@ -1,0 +1,115 @@
+{	
+	"sceneData": {
+		"type": "sceneRenderer",
+		"display": {
+			"size": {"x": 512, "y": 512}
+		},
+		"views": [{
+			"id": "mainView",
+			"offset": {"x": 0, "y": 0},
+			"layers": [{ "id": "mainLayer", "backgroundColor": "black" }, { "id": "entityLayer", "backgroundColor": "red", "opacity": 0.05 }],
+			"position": {"x": 0, "y": 0}, 
+			"size": {"x": 512, "y": 512}, 
+			"scale": 1.0
+		}]
+	},
+	"renderData": {
+		"layerFilters": [{ "type": "blur", "data": { "blurSize": 2 } }],
+		"objects": [
+			{
+				"position": {"x": 15, "y": 15},
+				"size": {"x": 10, "y": 10},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "line",
+						"strokeStyle": "red"
+					}
+				]
+			},
+			{
+				"position": {"x": 256, "y": 256},
+				"size": {"x": 50, "y": 50},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "blue"
+					},
+					{
+						"type": "line",
+						"strokeStyle": "blue",
+						"offsetStart": { "x": 5, "y": 15 },
+						"offsetEnd": { "x": 20, "y": 0 }
+					}
+				]
+			},
+			
+			{
+				"position": {"x": 0, "y": 300},
+				"size": {"x": 25, "y": 25},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"fillStyle": "orange"
+					}
+				]
+			},
+			{
+				"position": {"x": 400, "y": 200},
+				"size": {"x": 25, "y": 25},
+				"layerId": "entityLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "white"
+					},
+					{
+						"type": "triangle",
+						"fillStyle": "orange"
+					}
+				]			
+			},
+			{
+				"position": {"x": 50, "y": 50},
+				"size": {"x": 25, "y": 25},
+				"layerId": "entityLayer",
+				"renderers": [
+					{
+						"type": "circle",
+						"fillStyle": "orange"
+					}
+				]
+			},
+			{
+				"position": {"x": 150, "y": 50},
+				"size": {"x": 25, "y": 25},
+				"layerId": "entityLayer",
+				"renderers": [
+					{
+						"type": "circle",
+						"strokeStyle": "white"
+					},
+					{
+						"type": "arc",
+						"startAngle": 15,
+						"endAngle": 220,
+						"fillStyle": "orange"
+					}
+				]
+			},
+			{
+				"position": {"x": 250, "y": 50},
+				"size": {"x": 10, "y": 10},
+				"layerId": "entityLayer",
+				"renderers": [
+					{
+						"type": "line",
+						"fillStyle": "orange"
+					}
+				]
+			}
+		]
+	}
+}

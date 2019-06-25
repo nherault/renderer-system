@@ -1,0 +1,1 @@
+{"version":3,"file":"initial-config.js","sourceRoot":"","sources":["../../renderer/initial-config.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,qBAAqB,EAAE,MAAM,mBAAmB,CAAC;AAG1D,MAAM,CAAC,IAAM,aAAa,GAAuB;IAC7C,cAAc,EAAE,qBAAqB;IACrC,SAAS,EAAE;QACP,MAAM,EAAE,EAAE;QACV,OAAO,EAAE,EAAE;QACX,MAAM,EAAE,EAAE;KACb;IACD,cAAc,EAAE,cAAM,OAAA,CAAC,EAAE,CAAC,EAAJ,CAAI;CAC7B,CAAC"}

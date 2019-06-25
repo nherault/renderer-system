@@ -1,0 +1,18 @@
+{
+  "extends": "tslint:latest",
+  "rules": {
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "max-line-length": [true, {"limit": 140, "ignore-pattern": "^import |^export {(.*?)}"}],
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "no-console": [true, "log", "error"]
+  }
+}

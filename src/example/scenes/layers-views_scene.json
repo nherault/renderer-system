@@ -1,0 +1,166 @@
+{	
+	"sceneData": {
+		"display": {
+			"size": { "x": 500, "y": 600 }
+		},	
+		"views": [{
+			"id": "player1",
+			"offset": { "x": 0, "y": 0 },
+			"position": { "x": 50, "y": 50 },
+			"size": { "x": 250, "y": 300 },
+			"scale": 0.5,
+			"layers": [
+				{ "id": "backgroundLayer" },
+				{ "id": "entityLayer" }
+			]
+		}, {
+			"id": "player2",
+			"offset": { "x": 250, "y": 0 },
+			"position": { "x": 50, "y": 50 },
+			"size": { "x": 250, "y": 300 },
+			"scale": 0.25,
+			"layers": [
+				{ "id": "backgroundLayer" },
+				{ "id": "entityLayer" },
+				{ "id": "uiLayer" }
+			]
+		}, {
+			"id": "player3",
+			"offset": { "x": 0, "y": 300 },
+			"position": { "x": 50, "y": 50 },
+			"size": { "x": 500, "y": 300 },
+			"scale": 1.5,
+			"layers": [
+				{ "id": "backgroundLayer" },
+				{ "id": "entityLayer" }
+			]
+		}, {
+			"id": "player4",
+			"offset": { "x": 450, "y": 150 },
+			"position": { "x": 50, "y": 50 },
+			"size": { "x": 500, "y": 300 },
+			"scale": 0.1,
+			"layers": [
+				{ "id": "backgroundLayer" },
+				{ "id": "entityLayer" }
+			]
+		}],	
+		"resources": {
+			"preview": {
+				"id": "preview",
+				"type": "image",
+				"tilesetId": "preview",
+				"tileIndex": 0
+			},
+			"hexagone": {
+				"id": "hexagone",
+				"type": "image",
+				"tilesetId": "hexagone",
+				"tileIndex": 0
+			},
+			"water": {
+				"id": "water",
+				"type": "tile",
+				"tilesetId": "hexmini",
+				"tileIndex": 14
+			}
+		},
+		"tilesets": [
+			{
+				"id": "preview",
+				"firstResourceId": 1,
+				"image": "img/preview.png",
+				"imageHeight": 2200,
+				"imageWidth": 1700,
+				"nbTiles": 1,
+				"tileDirection": 1,
+				"tileHeight": 1700,
+				"tileWidth": 2200,
+				"type": "image"
+			},
+			{
+				"id": "hexagone",
+				"firstResourceId": 2,
+				"image": "img/test_hexagonal_tile_60x60x30.png",
+				"imageHeight": 60,
+				"imageWidth": 60,
+				"nbTiles": 1,
+				"tileDirection": 1,
+				"tileHeight": 60,
+				"tileWidth": 60,
+				"type": "image"
+			},
+			{
+				"id": "hexmini",
+				"firstResourceId": 3,
+				"image": "img/hexmini.png",
+				"imageHeight": 72,
+				"imageWidth": 106,
+				"nbTiles": 20,
+				"tileDirection": 1,
+				"tileHeight": 18,
+				"tileWidth": 18,
+				"type": "grid"
+			}
+		]
+	},
+	"renderData": {
+		"layerFilters": [
+			{ "layerId": "backgroundLayer", "type": "grayscale" },
+			{ "layerId": "entityLayer", "type": "negative" }
+		],
+		"objects": [
+			{
+				"position": {"x": 0, "y": 0},
+				"size": {"x": 2200, "y": 1700},
+				"layerId": "backgroundLayer",
+				"renderers": [
+					{
+						"type": "resource",
+						"resourceId": "preview"
+					}
+				]
+			},
+			{
+				"position": {"x": 200, "y": 400},
+				"size": {"x": 60, "y": 60},
+				"layerId": "entityLayer",
+				"resourceId": "hexagone"
+			},
+			{
+				"position": {"x": 400, "y": 200},
+				"size": {"x": 120, "y": 120},
+				"layerId": "entityLayer",
+				"filters": [ { "type": "grayscale", "data": { "passes": 6} }],
+				"renderers": [
+					{
+						"type": "resource",
+						"resourceId": "hexagone"
+					}
+				]
+			},
+			{
+				"position": {"x": 200, "y": 150},
+				"size": {"x": 36, "y": 36},
+				"layerId": "entityLayer",
+				"renderers": [
+					{
+						"type": "resource",
+						"resourceId": "water"
+					}
+				]
+			},
+			{
+				"position": {"x": 300, "y": 250},
+				"size": {"x": 72, "y": 72},
+				"layerId": "uiLayer",
+				"renderers": [
+					{
+						"type": "resource",
+						"resourceId": "water"
+					}
+				]
+			}
+		]
+	}
+}

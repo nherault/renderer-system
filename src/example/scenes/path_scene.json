@@ -1,0 +1,151 @@
+{	
+	"sceneData": {
+		"type": "sceneRenderer",
+		"display": {
+			"size": {"x": 512, "y": 512}
+		},
+		"views": [{
+			"id": "mainView",
+			"offset": {"x": 0, "y": 0},
+			"layers": [{ "id": "mainLayer", "backgroundColor": "black"}, { "id": "entityLayer" }],
+			"position": {"x": 0, "y": 0}, 
+			"size": {"x": 512, "y": 512}, 
+			"scale": 1.0
+		}]
+	},
+	"renderData": {
+		"objects": [
+			{
+				"position": {"x": 15, "y": 15},
+				"size": {"x": 50, "y": 50},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "white"
+					},
+					{
+						"type": "path2D",
+						"path": [
+							{ "type": "lineTo", "to": { "x": 5, "y": 10 } },
+							{ "type": "lineTo", "to": { "x": 15, "y": 50 } },
+							{
+								"type": "rectangle",
+								"position": {"x": 0, "y": 0},
+								"size": {"x": 10, "y": 15}
+							},
+							{ "type": "moveTo", "to": { "x": 25, "y": 25 } },
+							{
+								"type": "arc",
+								"position": {"x": 0, "y": 0},
+								"radius": 5,
+								"startAngle": 60,
+								"endAngle": 270
+							}
+						],
+						"strokeStyle": "orange"
+					}
+				]
+			},
+			{
+				"position": {"x": 120, "y": 120},
+				"size": {"x": 50, "y": 50},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "white"
+					},
+					{
+						"type": "path2D",
+						"path": [
+							{ "type": "lineTo", "to": { "x": 80, "y": 0 } },
+							{ "type": "arcTo", "from": { "x": 100, "y": 0 }, "to": { "x": 100, "y": 50 }, "radius": 25 },
+							{ "type": "lineTo", "to": { "x": 100, "y": 100 } }
+						],
+						"closePath": true,
+						"strokeStyle": "blue"
+					}
+				]
+			},
+			{
+				"position": {"x": 220, "y": 220},
+				"size": {"x": 75, "y": 75},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "white"
+					},
+					{
+						"type": "path2D",
+						"path": [
+							{ "type": "lineTo", "to": { "x": 80, "y": 0 } },
+							{ "type": "arcTo", "from": { "x": 100, "y": 0 }, "to": { "x": 100, "y": 50 }, "radius": 25 },
+							{ "type": "lineTo", "to": { "x": 100, "y": 100 } }
+						],
+						"closePath": false,
+						"strokeStyle": "purple"
+					}
+				]
+			},
+			{
+				"position": {"x": 75, "y": 220},
+				"size": {"x": 100, "y": 100},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "white"
+					},
+					{
+						"type": "path2D",
+						"path": [
+							{ "type": "moveTo", "to": { "x": 20, "y": 20 } },
+							{ "type": "lineTo", "to": { "x": 40, "y": 20 } },
+							{ "type": "quadraticCurveTo", "cp": { "x": 60, "y": 20 }, "end": { "x": 60, "y": 40 } },
+							{ "type": "lineTo", "to": { "x": 60, "y": 80 } },
+							{ "type": "moveTo", "to": { "x": 100, "y": 100 } }
+						],
+						"closePath": false,
+						"strokeStyle": "purple"
+					}
+				]
+			},
+			{
+				"position": {"x": 75, "y": 350},
+				"size": {"x": 100, "y": 100},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "white"
+					},
+					{
+						"type": "path2D",
+						"path": [
+							{ "type": "moveTo", "to": { "x": 20, "y": 20 } },
+							{ "type": "lineTo", "to": { "x": 40, "y": 20 } },
+							{ "type": "bezierCurveTo", "cp1": { "x": 60, "y": 0 }, "cp2": { "x": 80, "y": 60 }, "end": { "x": 60, "y": 40 } },
+							{ "type": "lineTo", "to": { "x": 60, "y": 80 } },
+							{ "type": "moveTo", "to": { "x": 100, "y": 100 } }
+						],
+						"closePath": false,
+						"strokeStyle": "red"
+					}
+				]
+			},
+			{
+				"position": {"x": 400, "y": 200},
+				"size": {"x": 25, "y": 25},
+				"layerId": "entityLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"fillStyle": "white"
+					}
+				]			
+			}
+		]
+	}
+}

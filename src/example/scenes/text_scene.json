@@ -1,0 +1,111 @@
+{	
+	"sceneData": {
+		"display": {
+			"size": {"x": 512, "y": 512}
+		},
+		"views": [{
+			"id": "mainView",
+			"layers": [{ "id": "mainLayer", "backgroundColor": "black", "repeater": { "type": "delay", "delay": 5000, "currTime": 0 }}]
+		}]
+	},
+	"renderData": {
+		"objects": [
+			{
+				"position": {"x": -25, "y": 215},
+				"size": {"x": 50, "y": 10},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "blue"
+					},
+					{
+						"offsetPosition": {"x": -15, "y": 15},
+						"type": "text",
+						"fillStyle": "orange",
+						"anchor": {"target": "view", "direction": "CORNER_TOP_RIGHT"},
+						"textAlign": "end",
+						"textBaseline": "bottom",
+						"text": "test of text"
+					}
+				]
+			},
+			{
+				"position": {"x": 15, "y": 15},
+				"size": {"x": 50, "y": 10},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "blue"
+					},
+					{
+						"offsetPosition": {"x": -15, "y": 15},
+						"type": "text",
+						"fillStyle": "orange",
+						"anchor": {"target": "view", "direction": "CORNER_TOP_RIGHT"},
+						"textAlign": "end",
+						"textBaseline": "bottom",
+						"text": "test of text"
+					}
+				]
+			},
+			{
+				"position": {"x": 150, "y": 150},
+				"size": {"x": 50, "y": 10},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "rectangle",
+						"strokeStyle": "blue"
+					},
+					{
+						"type": "text",
+						"fillStyle": "orange",
+						"text": "score (D)"
+					},
+					{
+						"type": "text",
+						"fillStyle": "orange",
+						"text": "score (C)",
+						"textAlign": "center",
+						"textBaseline": "bottom"
+					},
+					{
+						"type": "text",
+						"fillStyle": "orange",
+						"text": "score (S)",
+						"textAlign": "start",
+						"offsetPosition": {"y": 20}
+					},
+					{
+						"type": "text",
+						"fillStyle": "orange",
+						"text": "score (E)",
+						"textAlign": "end",
+						"offsetPosition": {"y": 40}
+					}
+				]
+			},
+			{
+				"position": {"x": 50, "y": 50},
+				"size": {"x": 10, "y": 10},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "text",
+						"fillStyle": "orange",
+						"strokeStyle": "red",
+						"text": "score",
+						"font": {
+							"size": 50,
+							"unit": "px",
+							"family": "Comic Sans MS",
+							"style": "italic"
+						}
+					}
+				]
+			}
+		]
+	}
+}

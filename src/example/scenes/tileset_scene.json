@@ -1,0 +1,243 @@
+{	
+	"sceneData": {		
+		"resources": {
+			"spaceship": {
+				"id": "spaceship",
+				"type": "image",
+				"tilesetId": "spaceship",
+				"tileIndex": 0
+			},
+			"explosionX": {
+				"id": "explosion2",
+				"type": "tile",
+				"tilesetId": "explosion",
+				"tileIndex": 8
+			},
+			"explosion": {
+				"id": "explosion",
+				"type": "animation",
+				"tilesetId": "explosion",
+				"tileIndex": "slow_explosion_animation"
+			}
+		},
+		"tilesets": [
+			{
+				"id": "spaceship",
+				"firstResourceId": 1,
+				"image": "img/spaceship.png",
+				"imageHeight": 64,
+				"imageWidth": 64,
+				"nbTiles": 1,
+				"tileDirection": 1,
+				"tileHeight": 64,
+				"tileWidth": 64,
+				"type": "image"
+			},
+			{
+				"id": "explosion",
+				"firstResourceId": 21,
+				"image": "img/explosion_transparency.png",
+				"imageHeight": 51,
+				"imageWidth": 816,
+				"nbTiles": 16,
+				"tileDirection": 1,
+				"tileHeight": 51,
+				"tileWidth": 51,
+				"type": "grid",
+				"tileDatas": {
+					"explosion_animation": {
+						"name": "explosion_animation",
+						"animation": [
+							{
+								"tileIndex": 0,
+								"delay": 100
+							},
+							{
+								"tileIndex": 1,
+								"delay": 100
+							},
+							{
+								"tileIndex": 2,
+								"delay": 100
+							},
+							{
+								"tileIndex": 3,
+								"delay": 100
+							},
+							{
+								"tileIndex": 4,
+								"delay": 100
+							},
+							{
+								"tileIndex": 5,
+								"delay": 100
+							},
+							{
+								"tileIndex": 6,
+								"delay": 100
+							},
+							{
+								"tileIndex": 7,
+								"delay": 100
+							},
+							{
+								"tileIndex": 8,
+								"delay": 100
+							},
+							{
+								"tileIndex": 9,
+								"delay": 100
+							},
+							{
+								"tileIndex": 10,
+								"delay": 100
+							},
+							{
+								"tileIndex": 11,
+								"delay": 100
+							},
+							{
+								"tileIndex": 12,
+								"delay": 100
+							},
+							{
+								"tileIndex": 13,
+								"delay": 100
+							},
+							{
+								"tileIndex": 14,
+								"delay": 100
+							},
+							{
+								"tileIndex": 15,
+								"delay": 100
+							}
+						]
+					},
+					"slow_explosion_animation": {
+						"name": "slow_explosion_animation",
+						"animation": [
+							{
+								"tileIndex": 0,
+								"delay": 250
+							},
+							{
+								"tileIndex": 1,
+								"delay": 250
+							},
+							{
+								"tileIndex": 2,
+								"delay": 250
+							},
+							{
+								"tileIndex": 3,
+								"delay": 250
+							},
+							{
+								"tileIndex": 4,
+								"delay": 250
+							},
+							{
+								"tileIndex": 5,
+								"delay": 250
+							},
+							{
+								"tileIndex": 6,
+								"delay": 250
+							},
+							{
+								"tileIndex": 7,
+								"delay": 250
+							},
+							{
+								"tileIndex": 8,
+								"delay": 250
+							},
+							{
+								"tileIndex": 9,
+								"delay": 250
+							},
+							{
+								"tileIndex": 10,
+								"delay": 250
+							},
+							{
+								"tileIndex": 11,
+								"delay": 250
+							},
+							{
+								"tileIndex": 12,
+								"delay": 250
+							},
+							{
+								"tileIndex": 13,
+								"delay": 250
+							},
+							{
+								"tileIndex": 14,
+								"delay": 250
+							},
+							{
+								"tileIndex": 15,
+								"delay": 250
+							}
+						]
+					}
+				}
+			}
+		]
+	},
+	"renderData": {		
+		"objects": [
+			{
+				"position": {"x": 15, "y": 15},
+				"size": {"x": 64, "y": 64},
+				"layerId": "mainLayer",
+				"filters": [ { "type": "blur", "data": { "passes": 2} }],
+				"renderers": [
+					{
+						"type": "resource",
+						"resourceId": "spaceship",
+						"opacity": 0.5
+					}
+				]
+			},
+			{
+				"position": {"x": 150, "y": 150},
+				"size": {"x": 128, "y": 128},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "resource",
+						"resourceId": "spaceship"
+					}
+				]
+			},
+			{
+				"position": {"x": 150, "y": 350},
+				"size": {"x": 51, "y": 51},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "resource",
+						"resourceId": "explosionX"
+					}
+				]
+			},
+			{
+				"position": {"x": 250, "y": 350},
+				"size": {"x": 51, "y": 51},
+				"layerId": "mainLayer",
+				"renderers": [
+					{
+						"type": "resource",
+						"resourceId": "explosion"
+					}
+				],
+				"animation": {
+					"currentIndex": 1
+				}
+			}
+		]
+	}
+}

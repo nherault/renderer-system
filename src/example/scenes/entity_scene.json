@@ -1,0 +1,217 @@
+{	
+	"sceneData": {
+		"display": {
+			"size": {"x": 512, "y": 512}
+		},
+		"views": [{
+			"id": "mainView",
+			"layers": [{ "id": "mainLayer", "backgroundColor": "black"}]
+		}],
+		"resources": {
+			"hexagone": {
+				"id": "hexagone",
+				"type": "image",
+				"tilesetId": "hexagone",
+				"tileIndex": 0
+			},
+			"bullet": {
+				"id": "bullet",
+				"type": "image",
+				"tilesetId": "bullet",
+				"tileIndex": 0
+			}
+		},
+		"tilesets": [
+			{
+				"id": "hexagone",
+				"firstResourceId": 2,
+				"image": "img/test_hexagonal_tile_60x60x30.png",
+				"imageHeight": 60,
+				"imageWidth": 60,
+				"nbTiles": 1,
+				"tileDirection": 1,
+				"tileHeight": 60,
+				"tileWidth": 60,
+				"type": "image"
+			},
+			{
+				"id": "bullet",
+				"firstResourceId": 2,
+				"image": "img/bullets/bullet_player4.png",
+				"imageHeight": 28,
+				"imageWidth": 11,
+				"nbTiles": 1,
+				"tileDirection": 1,
+				"tileHeight": 28,
+				"tileWidth": 11,
+				"type": "image"
+			}
+		]
+	},
+	"renderData": {
+		"objects": [
+			{
+				"position": {"x": 10, "y": 10},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone"
+			},
+			{
+				"position": {"x": 110, "y": 10},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone",
+				"rotation": 90
+			},			
+			{
+				"position": {"x": 210, "y": 10},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone",
+				"rotation": 180
+			},
+			{
+				"position": {"x": 310, "y": 10},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone",
+				"rotation": 270
+			},
+			{
+				"position": {"x": 410, "y": 10},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone",
+				"rotation": 315
+			},
+			{
+				"position": {"x": 10, "y": 110},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone"
+			},
+			{
+				"position": {"x": 110, "y": 110},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone",
+				"horizontalFlip": true
+			},
+			{
+				"position": {"x": 210, "y": 110},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone",
+				"verticalFlip": true
+			},
+			{
+				"position": {"x": 310, "y": 110},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone",
+				"horizontalFlip": true,
+				"verticalFlip": true
+			},
+			{
+				"position": {"x": 10, "y": 210},
+				"size": {"x": 60, "y": 60},
+				"layerId": "mainLayer",
+				"resourceId": "hexagone",
+				"horizontalFlip": true,
+				"verticalFlip": true,
+				"rotation": 90
+			},
+			{
+				"position": {"x": 10, "y": 310},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet"
+			},
+			{
+				"position": {"x": 110, "y": 310},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"rotation": 90
+			},			
+			{
+				"position": {"x": 210, "y": 310},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"rotation": 180
+			},
+			{
+				"position": {"x": 310, "y": 310},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"rotation": 270
+			},
+			{
+				"position": {"x": 410, "y": 310},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"rotation": 315
+			},
+			{
+				"position": {"x": 10, "y": 360},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet"
+			},
+			{
+				"position": {"x": 110, "y": 360},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"horizontalFlip": true
+			},
+			{
+				"position": {"x": 210, "y": 360},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"verticalFlip": true
+			},
+			{
+				"position": {"x": 310, "y": 360},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"horizontalFlip": true,
+				"verticalFlip": true
+			},
+			{
+				"position": {"x": 10, "y": 410},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"horizontalFlip": true,
+				"verticalFlip": true,
+				"rotation": 90
+			},
+			{
+				"position": {"x": 10, "y": 460},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet"
+			},
+			{
+				"position": {"x": 10, "y": 460},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"rotation": -45
+			},
+			{
+				"position": {"x": 10, "y": 460},
+				"size": {"x": 11, "y": 28},
+				"layerId": "mainLayer",
+				"resourceId": "bullet",
+				"rotation": 45
+			}
+		]
+	}
+}
